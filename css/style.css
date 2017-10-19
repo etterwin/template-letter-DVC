@@ -4,7 +4,7 @@
 
 html,
 body {
-  background: white;
+  background: #f5f6fa;
   font-family: "Prompt", sans-serif;
   color: #313233;
   font-size: 20pt; }
@@ -54,6 +54,14 @@ body {
   color: #107a43;
   margin: auto 0 auto 5px; }
 
+.diavita-caption--padding {
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #107a43;
+  margin: auto 10px auto 5px; }
+
 .diavita-icon--text {
   display: inline-block;
   width: 20px;
@@ -85,13 +93,14 @@ body {
   display: inline-block; }
 
 .header-text--small {
-  margin-top: 50px;
-  font-size: 20px; }
-
-.header-text--center {
   margin-top: 20px;
   font-size: 20px;
-  text-align: center; }
+  text-shadow: 0 2px 2px rgba(16, 122, 67, 0.3); }
+
+.header-text--bold {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600; }
 
 /*container*/
 .caption__container {
@@ -102,7 +111,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   display: inline-block;
-  margin: auto 10px auto 10px; }
+  margin: auto 10px auto 0; }
 
 .text {
   font-size: 20px;
@@ -140,20 +149,59 @@ body {
   font-size: 20px; }
 
 .item {
+  width: 705px;
   margin-bottom: 15px;
-  margin-left: 15px; }
+  margin-left: calc(100% - 705px); }
 
 .item:last-child {
   margin-bottom: 0; }
 
-.item::before {
-  content: "";
-  display: inline-block;
-  background: #107a43;
-  border-radius: 50%;
+.item-img {
   width: 15px;
   height: 15px;
-  margin-right: 10px; }
+  display: inline-block; }
+
+.item-text {
+  display: inline-block;
+  width: calc(100% - 30px);
+  vertical-align: top; }
+
+/*scheme*/
+.scheme__container {
+  display: inline-block;
+  width: 40%;
+  margin: auto; }
+
+.scheme__text {
+  display: inline-block;
+  margin: auto; }
+
+.scheme-img {
+  width: 70%;
+  display: block;
+  margin: 0 auto; }
+
+.scheme-img--big {
+  display: block;
+  height: 320px;
+  margin: 50px auto; }
+
+.scheme-img--wide {
+  display: block;
+  margin: 50px auto;
+  width: 100%; }
+
+.scheme-text {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 20px;
+  text-align: center;
+  color: #324a5e;
+  text-shadow: 0 2px 2px rgba(50, 74, 94, 0.3); }
+
+.scheme-text--center {
+  color: #324a5e;
+  font-weight: 600; }
 
 /*screenshots*/
 .screenshot__container {
@@ -166,5 +214,11 @@ body {
   max-height: 230px;
   display: inline-block;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+
+/*footer*/
+.footer-logo {
+  display: block;
+  width: 300px;
+  margin: 30px 0 50px calc(100% - 300px); }
 
 /*# sourceMappingURL=style.css.map */
