@@ -95,7 +95,18 @@ body {
 .header-text--small {
   margin-top: 20px;
   font-size: 20px;
-  text-shadow: 0 2px 2px rgba(16, 122, 67, 0.3); }
+  display: block;
+  padding: 15px;
+  background: #6cba47;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1); }
+
+.text--small {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px dashed white;
+  border-radius: 4px; }
 
 .header-text--bold {
   margin-top: 20px;
@@ -217,7 +228,7 @@ body {
   width: 370px;
   height: 100%;
   display: inline-block;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3); }
 
 /*footer*/
 .footer-logo {
