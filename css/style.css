@@ -167,6 +167,9 @@ body {
   width: calc(100% - 30px);
   vertical-align: top; }
 
+.hide-box {
+  display: none; }
+
 /*scheme*/
 .scheme__container {
   display: inline-block;
@@ -244,7 +247,26 @@ body {
   .screen {
     display: block;
     width: 90%;
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+
+  .hide-box {
+    display: block;
+    margin: 20px auto; }
+
+  .hide__container {
+    padding: 15px 5px;
+    box-sizing: border-box; }
+
+  .hide-img {
+    display: block;
+    margin: 15px auto;
+    width: 70%; }
+
+  .hide-text {
+    font-size: 20px; }
+
+  .scheme-img--wide {
+    display: none; } }
 @media screen and (max-width: 479px) {
   .header-logo {
     width: 200px;
